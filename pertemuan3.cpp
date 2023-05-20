@@ -2,20 +2,21 @@
 using namespace std;
 
 int main() {
-	int a;
+	
+	int length;
 	
 	cout << "Masukkan input: ";
-	cin >> a;
+	cin >> length;
 	
-	string arr[a];
+	string arr[length];
 	
- 	for (int i = 0; i < a; i++) {
+ 	for (int i = 0; i < length; i++) {
  		cout << "Input data ke " << i+1 << ": ";
 		cin >> arr[i];
 	}
 	
 	cout << "Output: ";
-	for (int i = 0; i < a; i++) {
+	for (int i = 0; i < length; i++) {
 		if (i > 0) {
 			cout << ", ";
 		}
