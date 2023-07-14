@@ -57,6 +57,17 @@ int main () {
 	} else {
 		cout << "Data tidak ditemukan";
 	}
+
+	// Cari data
+	cout << "Cari data: ";
+	cin >> length;
+	for (int p = 0; p <= length; p++) {
+		if (arr[p] == length) {
+			cout << "Data ditemukan, pada urutan ke " << p+1;
+		} else if (arr[p] != length) {
+			cout << "Data tidak ditemukan";
+		}
+	}
 	
     return 0;	
 	
