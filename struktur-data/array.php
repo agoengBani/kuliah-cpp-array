@@ -67,6 +67,8 @@ tr:nth-child(even) {
 
 <h2>HTML Table</h2>
 
+<!-- TABEL 1 -->
+   
 <table>
   <tr>
     <th>Buah-buahan</th>
@@ -83,6 +85,36 @@ tr:nth-child(even) {
    <?php 
     }
     ?>
+</table>
+
+<!-- TABEL 2 -->
+   
+   <table>
+  <tr>
+    <th>Buah-buahan</th>
+  </tr>
+
+  <?php
+   $arr_md = [
+      ["Jeruk", "Mangga", "Apel"],
+      ["Semangka", "Salak", "Pepaya"]
+   ];
+   
+   foreach($arr_md as $key => $arr) {
+   ?>
+   <tr>
+      <td>
+         <?php
+            foreach($arr as $i => $ar){
+               echo $ar;
+               echo " ";
+            }
+         ?>
+      </td>
+   </tr>
+   <?php 
+   }
+   ?>
 </table>
 
 </body>
